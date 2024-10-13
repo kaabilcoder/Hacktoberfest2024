@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo application</title>
+</head>
+<body>
+    <input type="text"></input>
+    <button onclick="addtodo()">Add todo</button>
+
+    <!-- <script>
+        function addtodo() {
+            const value = document.querySelector('input').value;
+            const newdivel = document.createElement('div');
+            newdivel.innerHTML = "<div>" + value + "</div><button>Delete</button>";
+            document.querySelector('body').appendChild(newdivel);
+        }
+    </script> -->
+
+    <script>
+        function addtodo(){
+            const value = document.querySelector('input').value;
+            const spanel = document.createElement('span');
+            spanel.innerHTML = value;
+            const buttonel = document.createElement('button');
+            buttonel.innerHTML = 'delete';
+            const divel = document.createElement('div');
+            divel.appendChild(spanel);
+            divel.appendChild(buttonel);
+            document.querySelector('body').appendChild(divel);
+
+        }
+    </script>
+</body>
+</html>
